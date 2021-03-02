@@ -5,11 +5,14 @@ ODIR =	./objs/
 
 SRCS_C =	$(SDIR)main.c\
 			$(SDIR)testa_ft_strlen.c\
-			$(SDIR)testa_ft_strcpy.c
+			$(SDIR)testa_ft_strcpy.c\
+			$(SDIR)testa_ft_strcmp.c
 
 SRCS_S =	$(SDIR)teste.s\
 			$(SDIR)ft_strlen.s\
-			$(SDIR)ft_strcpy.s
+			$(SDIR)ft_strcpy.s\
+			$(SDIR)ft_strcmp.s
+
 
 
 OBJS_C = $(patsubst $(SDIR)%.c, $(ODIR)%.o, $(SRCS_C))		

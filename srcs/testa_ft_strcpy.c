@@ -6,14 +6,14 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 21:37:44 by user42            #+#    #+#             */
-/*   Updated: 2021/03/02 23:54:29 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/03 00:15:43 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libasm.h"
 #include "testa.h"
 
-void	print(char *s)
+static void	print(char *s)
 {
 		char *d;
 		
