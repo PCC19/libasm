@@ -6,7 +6,7 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 19:13:46 by user42            #+#    #+#             */
-/*   Updated: 2021/03/02 20:43:11 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/02 21:35:38 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,3 +14,5 @@
 
 int	teste(void);
 size_t	ft_strlen(const char *s);
+char	*strcpy(char *dest, const char *src);
+

@@ -4,7 +4,9 @@ SDIR =	./srcs/
 ODIR =	./objs/
 
 SRCS_C =	$(SDIR)main.c\
-			$(SDIR)testa_ft_strlen.c
+			$(SDIR)testa_ft_strlen.c\
+			$(SDIR)testa_ft_strcpy.c
+
 SRCS_S =	$(SDIR)teste.s\
 			$(SDIR)ft_strlen.s
 
