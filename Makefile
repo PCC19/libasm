@@ -8,7 +8,9 @@ SRCS_C =	$(SDIR)main.c\
 			$(SDIR)testa_ft_strcpy.c
 
 SRCS_S =	$(SDIR)teste.s\
-			$(SDIR)ft_strlen.s
+			$(SDIR)ft_strlen.s\
+			$(SDIR)ft_strcpy.s
+
 
 OBJS_C = $(patsubst $(SDIR)%.c, $(ODIR)%.o, $(SRCS_C))		
 OBJS_S = $(patsubst $(SDIR)%.s, $(ODIR)%.o, $(SRCS_S))		

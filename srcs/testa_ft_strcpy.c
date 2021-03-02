@@ -6,7 +6,7 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 21:37:44 by user42            #+#    #+#             */
-/*   Updated: 2021/03/02 22:00:37 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/02 23:54:29 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	print(char *s)
 		//printf("   strcpy\n");
 		printf("   strcpy source: |%s|\t\t\t dest: |%s|\n", s, strcpy(d, s));
 		//printf("ft_strcpy\n");
-		printf("ft_strcpy source: |%s|\t\t\t dest: |%s|\n", s, strcpy(d, s));
+		printf("ft_strcpy source: |%s|\t\t\t dest: |%s|\n", s, ft_strcpy(d, s));
 		free(d);
 }
 
