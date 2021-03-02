@@ -6,30 +6,25 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 20:37:59 by user42            #+#    #+#             */
-/*   Updated: 2021/03/02 21:23:54 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/03 00:55:15 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libasm.h"
 #include "testa.h"
 
-void	testa_ft_strlen(void)
+static void	print(char *s)
 {
-	char	s[][50] = {"Paulo",
-					"Roberto",
-					"",
-					"Paulo \t \n Cunha"};
-	int		i;
-	int		max;
+	printf("======= ft_strlen =======\n");
+	printf("string: |%s|\n", s);
+	printf("   strlen:\t\t%zu\n", strlen(s));
+	printf("ft_strlen:\t\t%zu\n", ft_strlen(s));
+}
 
-	max = 4;
-	i = 0;
-	while (i < max)
-	{
-		printf("======= ft_strlen =======\n");
-		printf("string: |%s|\n", s[i]);
-		printf("   strlen:\t\t%zu\n", strlen(s[i]));
-		printf("ft_strlen:\t\t%zu\n", ft_strlen(s[i]));
-		i++;
-	}
+void		testa_ft_strlen(void)
+{
+	print("Paulo");
+	print("Roberto");
+	print("");
+	print("Paulo \t \n Cunha");
 }
