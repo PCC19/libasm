@@ -8,15 +8,14 @@ SRCS_C =	$(TDIR)main.c\
 			$(TDIR)testa_ft_strlen.c\
 			$(TDIR)testa_ft_strcpy.c\
 			$(TDIR)testa_ft_strcmp.c\
-			$(TDIR)testa_ft_read.c
+			$(TDIR)testa_ft_read.c\
+			$(TDIR)testa_ft_write.c
 
 SRCS_S =	$(SDIR)teste.s\
 			$(SDIR)ft_strlen.s\
 			$(SDIR)ft_strcpy.s\
 			$(SDIR)ft_strcmp.s\
 			$(SDIR)ft_read.s
-
-
 
 OBJS_C = $(patsubst $(TDIR)%.c, $(ODIR)%.o, $(SRCS_C))		
 OBJS_S = $(patsubst $(SDIR)%.s, $(ODIR)%.o, $(SRCS_S))		
