@@ -6,7 +6,8 @@ ODIR =	./objs/
 SRCS_C =	$(SDIR)main.c\
 			$(SDIR)testa_ft_strlen.c\
 			$(SDIR)testa_ft_strcpy.c\
-			$(SDIR)testa_ft_strcmp.c
+			$(SDIR)testa_ft_strcmp.c\
+			$(SDIR)testa_ft_read.c
 
 SRCS_S =	$(SDIR)teste.s\
 			$(SDIR)ft_strlen.s\
