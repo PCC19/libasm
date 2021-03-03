@@ -17,7 +17,7 @@ SRCS_S =	$(SDIR)teste.s\
 
 
 
-OBJS_C = $(patsubst $(SDIR)%.c, $(ODIR)%.o, $(SRCS_C))		
+OBJS_C = $(patsubst $(TDIR)%.c, $(ODIR)%.o, $(SRCS_C))		
 OBJS_S = $(patsubst $(SDIR)%.s, $(ODIR)%.o, $(SRCS_S))		
 
 ASM = nasm
