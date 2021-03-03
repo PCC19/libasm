@@ -6,7 +6,7 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/03 22:40:01 by user42            #+#    #+#             */
-/*   Updated: 2021/03/04 00:33:48 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/04 00:37:46 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static void	print(size_t count, int fd, char *s1)
 	errno = 0;
 	if (fd > 1)
 		fd = open("aw", O_CREAT | O_RDWR | O_TRUNC, S_IRUSR | S_IWUSR);
-	n1 = write(fd, s1, count);
+	n1 = ft_write(fd, s1, count);
 	printf("ft_write s1: |%s|\t\t n1: %zu\t\t errno: %d\n", s1, n1, errno);
 	if (fd != 1)
 		close(fd);
