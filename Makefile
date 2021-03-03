@@ -24,7 +24,7 @@ ASM = nasm
 ASM_FLAGS = -f elf64
 
 CC = clang
-HEADERS = -I./includes
+HEADERS = -I./includes -I.
 C_FLAGS = -Wall -Werror -Wextra -g
 C_SANIT = -fsanitize=address
 L_FLAGS =  -L. -lasm
@@ -52,8 +52,4 @@ fclean: clean
 
 re:	fclean all
 
-lixo:
-	echo $(OBJS_C)
-	echo $(OBJS_S)
-
-.PHONY: all clean, fclean, re, run
+.PHONY: all clean fclean re run

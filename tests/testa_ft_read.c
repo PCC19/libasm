@@ -6,12 +6,17 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/03 15:16:17 by user42            #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2021/03/03 22:38:24 by user42           ###   ########.fr       */
+=======
+/*   Updated: 2021/03/03 23:42:07 by user42           ###   ########.fr       */
+>>>>>>> 22df984eb26d64590e70cce257439dd0252af8ac
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libasm.h"
 #include "testa.h"
+#include <errno.h>
 
 static void	print_o(size_t count, int fd)
 {

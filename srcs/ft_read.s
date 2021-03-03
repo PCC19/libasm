@@ -12,21 +12,20 @@
 
 bits	64
 
-extern	__ernno_location
-global ft_read
-
 section	.text
+	global ft_read
+	extern	__errno_location
+
 ft_read:
 	mov	rax,	0
 	syscall
 	cmp	rax,	0
-	jl	.error
+	jl	.erro
 	ret
-.error:
-	neg	rax
-	mov	rdi,	rax
-	call	__ernno_location
-	mov	[rax],	rdi
-	mov	rax,	-1
+.erro:
+	neg		rax
+	push	rax
+	call	__errno_location
+	pop		qword[rax]
+	mov		rax,	-1
 	ret
-
