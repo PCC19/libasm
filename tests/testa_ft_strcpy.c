@@ -6,7 +6,7 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 21:37:44 by user42            #+#    #+#             */
-/*   Updated: 2021/03/03 00:54:58 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/03 18:21:25 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void		testa_ft_strcpy(void)
 {
 	print("Paulo");
 	print("Cunha");
-	print("");
 	print("123");
+	print("");
+	print("Very long long long long long long long long long long string");
 }

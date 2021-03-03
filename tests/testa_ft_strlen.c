@@ -6,7 +6,7 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 20:37:59 by user42            #+#    #+#             */
-/*   Updated: 2021/03/03 00:55:15 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/03 18:21:36 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ static void	print(char *s)
 void		testa_ft_strlen(void)
 {
 	print("Paulo");
-	print("Roberto");
+	print("Rob\0erto");
 	print("");
 	print("Paulo \t \n Cunha");
+	print("Very long long long long long long long long long long string");
 }

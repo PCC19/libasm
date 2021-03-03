@@ -6,7 +6,7 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/03 00:07:44 by user42            #+#    #+#             */
-/*   Updated: 2021/03/03 00:54:29 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/03 18:23:05 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,13 @@ static void	print(char *s1, char *s2)
 
 void		testa_ft_strcmp(void)
 {
+	print("", "");
+	print("", "abcd");
+	print("abcd", "");
 	print("abcd", "abcd");
 	print("abcd", "abc");
 	print("abcd", "a");
 	print("abcd", "abcde");
 	print("abcd", "abcdef");
 	print("abcd", "abcdf");
-	print("", "abcdf");
-	print("abcd", "");
 }
