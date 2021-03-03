@@ -6,12 +6,13 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/03 15:16:17 by user42            #+#    #+#             */
-/*   Updated: 2021/03/03 18:37:33 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/03 23:42:07 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libasm.h"
 #include "testa.h"
+#include <errno.h>
 
 static void	print_o(size_t count, int fd)
 {
@@ -23,8 +24,8 @@ static void	print_o(size_t count, int fd)
 		if ((fd = open("ar", O_RDONLY)) < 0)
 			exit(1);
 	}
-	s1 = (char*)malloc(sizeof(char)*50);
-	bzero(s1,50);
+	s1 = (char*)malloc(sizeof(char) * 50);
+	bzero(s1, 50);
 	n1 = read(fd, s1, count);
 	printf("======= ft_read =======\n");
 	printf("   read s1: |%s|\t\t n1: %zu\t\t errno: %d\n", s1, n1, errno);
@@ -43,13 +44,12 @@ static void	print(size_t count, int fd)
 		if ((fd = open("ar", O_RDONLY)) < 0)
 			exit(1);
 	}
-	s1 = (char*)malloc(sizeof(char)*50);
-	bzero(s1,50);
-	n1 = read(fd, s1, count);
+	s1 = (char*)malloc(sizeof(char) * 50);
+	bzero(s1, 50);
+	n1 = ft_read(fd, s1, count);
 	printf("ft_read s1: |%s|\t\t n1: %zu\t\t errno: %d\n", s1, n1, errno);
 	close(fd);
 	free(s1);
-	//printf("%s\n,",strerror(errno));
 }
 
 void		testa_ft_read(void)
@@ -63,10 +63,10 @@ void		testa_ft_read(void)
 	print(5, 1);
 	print_o(100, 1);
 	print(100, 1);
-	printf("STDIN (0)\n");
-	print_o(10, 0);
-	print(10, 0);
 	printf("Wrong fd (-1)\n");
 	print_o(10, -5);
 	print(10, -5);
+	printf("STDIN (0)\n");
+	print_o(10, 0);
+	print(10, 0);
 }
