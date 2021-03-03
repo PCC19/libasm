@@ -13,11 +13,12 @@ SRCS_C =	$(TDIR)main.c\
 SRCS_S =	$(SDIR)teste.s\
 			$(SDIR)ft_strlen.s\
 			$(SDIR)ft_strcpy.s\
-			$(SDIR)ft_strcmp.s
+			$(SDIR)ft_strcmp.s\
+			$(SDIR)ft_read.s
 
 
 
-OBJS_C = $(patsubst $(SDIR)%.c, $(ODIR)%.o, $(SRCS_C))		
+OBJS_C = $(patsubst $(TDIR)%.c, $(ODIR)%.o, $(SRCS_C))		
 OBJS_S = $(patsubst $(SDIR)%.s, $(ODIR)%.o, $(SRCS_S))		
 
 ASM = nasm
@@ -51,5 +52,9 @@ fclean: clean
 	rm -f $(NAME)
 
 re:	fclean all
+
+lixo:
+	echo $(OBJS_C)
+	echo $(OBJS_S)
 
 .PHONY: all clean, fclean, re, run
