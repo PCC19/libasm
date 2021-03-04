@@ -17,13 +17,14 @@ section .text
 
 ft_strcpy:
 	mov	rax,	rdi
+	xor	rcx,	rcx
 .loop:
-	cmp	byte[rsi],	0
+	cmp	byte[rsi + rcx],	0
 	je	.sailoop
-	mov	rdi,	rsi
-	inc	rdi
-	inc rsi
+	mov	dl,	[rsi + rcx]
+	mov	[rax + rcx],	dl
+	inc	rcx
 	jmp	.loop
 .sailoop:
-	mov	rdi,	rsi
+	mov byte[rax + rcx],	0
 	ret

@@ -12,8 +12,7 @@ SRCS_C =	$(TDIR)main.c\
 			$(TDIR)testa_ft_write.c\
 			$(TDIR)testa_ft_strdup.c
 
-SRCS_S =	$(SDIR)teste.s\
-			$(SDIR)ft_strlen.s\
+SRCS_S =	$(SDIR)ft_strlen.s\
 			$(SDIR)ft_strcpy.s\
 			$(SDIR)ft_strcmp.s\
 			$(SDIR)ft_read.s\
@@ -49,6 +48,7 @@ clean:
 	rm -f $(OBJS_S)
 	rm -f $(OBJS_C)
 	rmdir $(ODIR)
+	rm run
 
 fclean: clean
 	rm -f $(NAME)

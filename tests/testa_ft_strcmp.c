@@ -6,7 +6,7 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/03 00:07:44 by user42            #+#    #+#             */
-/*   Updated: 2021/03/03 18:23:05 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/04 02:16:04 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 static void	print(char *s1, char *s2)
 {
-	printf("======= ft_strcmp =======\n");
-	printf("   strcmp s1: |%s|\t\t\t s2: |%s| dif: %d\n", s1, s2,
+	printf("--------------------------\n");
+	printf("   strcmp s1: |%s|\t\t s2: |%s| dif: %d\n", s1, s2,
 		strcmp(s1, s2));
-	printf("ft_strcmp s1: |%s|\t\t\t s2: |%s| dif: %d\n", s1, s2,
+	printf("ft_strcmp s1: |%s|\t\t s2: |%s| dif: %d\n", s1, s2,
 		ft_strcmp(s1, s2));
 }
 

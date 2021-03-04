@@ -6,7 +6,7 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 20:37:59 by user42            #+#    #+#             */
-/*   Updated: 2021/03/03 18:21:36 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/04 02:12:49 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 static void	print(char *s)
 {
-	printf("======= ft_strlen =======\n");
+	printf("--------------------------\n");
 	printf("string: |%s|\n", s);
 	printf("   strlen:\t\t%zu\n", strlen(s));
 	printf("ft_strlen:\t\t%zu\n", ft_strlen(s));
