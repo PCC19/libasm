@@ -6,7 +6,7 @@
 /*   By: user42 <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 20:40:44 by user42            #+#    #+#             */
-/*   Updated: 2021/03/04 00:19:16 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/04 00:48:08 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,4 @@ void	testa_ft_strcpy(void);
 void	testa_ft_strcmp(void);
 void	testa_ft_read(void);
 void	testa_ft_write(void);
+void	testa_ft_strdup(void);
